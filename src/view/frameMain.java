@@ -13,14 +13,14 @@ import javax.swing.JPanel;
  *
  * @author Sirdzat
  */
-public class sidebar extends javax.swing.JFrame {
+public class frameMain extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(sidebar.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameMain.class.getName());
 
     /**
      * Creates new form sidebar
      */
-    public sidebar() {
+    public frameMain() {
         initComponents();
         panelLengkung(pnlNama);
         setActiveMenu(pnlDasboard);
@@ -540,12 +540,12 @@ public class sidebar extends javax.swing.JFrame {
         com.formdev.flatlaf.FlatLightLaf.setup();
         
         java.awt.EventQueue.invokeLater(() -> {
-            new sidebar().setVisible(true);
+            new frameMain().setVisible(true);
         });
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new sidebar().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameMain().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
