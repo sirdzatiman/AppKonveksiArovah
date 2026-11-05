@@ -51,7 +51,7 @@ public class panelPesanan extends javax.swing.JPanel {
         jPanel1.setMinimumSize(new java.awt.Dimension(100, 91));
         jPanel1.setPreferredSize(new java.awt.Dimension(966, 91));
 
-        jLabel1.setFont(new java.awt.Font("Poppins", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
         jLabel1.setText("Daftar Pesanan");
 
         jLabel2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
@@ -196,7 +196,7 @@ public class panelPesanan extends javax.swing.JPanel {
         jPanel4.add(jPanel5, java.awt.BorderLayout.PAGE_START);
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel7.setLayout(new java.awt.BorderLayout());
+        jPanel7.setLayout(new java.awt.CardLayout());
         jPanel4.add(jPanel7, java.awt.BorderLayout.CENTER);
 
         jPanel2.add(jPanel4, java.awt.BorderLayout.CENTER);
