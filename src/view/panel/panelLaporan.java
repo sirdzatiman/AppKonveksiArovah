@@ -41,15 +41,12 @@ public class panelLaporan extends javax.swing.JPanel {
         jPanel7 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
@@ -58,8 +55,7 @@ public class panelLaporan extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        jPanel8 = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(252, 244, 246));
         setBorder(javax.swing.BorderFactory.createEmptyBorder(14, 18, 18, 20));
@@ -72,7 +68,7 @@ public class panelLaporan extends javax.swing.JPanel {
         lblJudul.setText("Laporan Transaksi");
 
         lblSubJudul.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        lblSubJudul.setText("Selamat datang, Owner!");
+        lblSubJudul.setText("Rekap pemasukan,pengeluaran, dan keuangan");
 
         javax.swing.GroupLayout panelHeaderLayout = new javax.swing.GroupLayout(panelHeader);
         panelHeader.setLayout(panelHeaderLayout);
@@ -83,7 +79,7 @@ public class panelLaporan extends javax.swing.JPanel {
                 .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblJudul)
                     .addComponent(lblSubJudul))
-                .addContainerGap(686, Short.MAX_VALUE))
+                .addContainerGap(585, Short.MAX_VALUE))
         );
         panelHeaderLayout.setVerticalGroup(
             panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -105,16 +101,16 @@ public class panelLaporan extends javax.swing.JPanel {
         jPanel2.setPreferredSize(new java.awt.Dimension(914, 43));
         jPanel2.setLayout(new java.awt.GridLayout(1, 1, 20, 20));
 
-        jComboBox1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Poppins Medium", 0, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel2.add(jComboBox1);
 
-        jTextField2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Poppins Medium", 0, 12)); // NOI18N
         jTextField2.setText("jTextField2");
         jTextField2.addActionListener(this::jTextField2ActionPerformed);
         jPanel2.add(jTextField2);
 
-        jComboBox2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jComboBox2.setFont(new java.awt.Font("Poppins Medium", 0, 12)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel2.add(jComboBox2);
 
@@ -135,16 +131,12 @@ public class panelLaporan extends javax.swing.JPanel {
         jPanel7.setBackground(new java.awt.Color(235, 248, 242));
 
         jLabel2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(72, 169, 147));
+        jLabel2.setForeground(new java.awt.Color(6, 140, 63));
         jLabel2.setText("Total Pemasukan");
 
-        jLabel5.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Poppins", 1, 32)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(6, 140, 63));
-        jLabel5.setText("Rp");
-
-        jLabel8.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(6, 140, 63));
-        jLabel8.setText("0");
+        jLabel5.setText("Rp 0");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -153,10 +145,7 @@ public class panelLaporan extends javax.swing.JPanel {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel8))
+                    .addComponent(jLabel5)
                     .addComponent(jLabel2))
                 .addContainerGap(149, Short.MAX_VALUE))
         );
@@ -165,10 +154,8 @@ public class panelLaporan extends javax.swing.JPanel {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel2)
-                .addGap(35, 35, 35)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel8))
+                .addGap(42, 42, 42)
+                .addComponent(jLabel5)
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
@@ -180,13 +167,9 @@ public class panelLaporan extends javax.swing.JPanel {
         jLabel3.setForeground(new java.awt.Color(237, 14, 42));
         jLabel3.setText("Total Pengeluaran");
 
-        jLabel6.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Poppins", 1, 32)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(238, 62, 87));
-        jLabel6.setText("Rp");
-
-        jLabel9.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(238, 62, 87));
-        jLabel9.setText("0");
+        jLabel6.setText("Rp 0");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -195,10 +178,7 @@ public class panelLaporan extends javax.swing.JPanel {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel9))
+                    .addComponent(jLabel6)
                     .addComponent(jLabel3))
                 .addContainerGap(145, Short.MAX_VALUE))
         );
@@ -208,10 +188,8 @@ public class panelLaporan extends javax.swing.JPanel {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel3)
                 .addGap(42, 42, 42)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel9))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addComponent(jLabel6)
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         jPanel6.add(jPanel10);
@@ -219,16 +197,12 @@ public class panelLaporan extends javax.swing.JPanel {
         jPanel11.setBackground(new java.awt.Color(244, 237, 254));
 
         jLabel4.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(141, 122, 243));
+        jLabel4.setForeground(new java.awt.Color(58, 21, 252));
         jLabel4.setText("Laba Bersih");
 
-        jLabel7.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 32)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Poppins", 1, 32)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(58, 21, 252));
-        jLabel7.setText("Rp");
-
-        jLabel10.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(58, 21, 252));
-        jLabel10.setText("0");
+        jLabel7.setText("Rp 0");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -237,10 +211,7 @@ public class panelLaporan extends javax.swing.JPanel {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel10))
+                    .addComponent(jLabel7)
                     .addComponent(jLabel4))
                 .addContainerGap(191, Short.MAX_VALUE))
         );
@@ -249,11 +220,9 @@ public class panelLaporan extends javax.swing.JPanel {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel4)
-                .addGap(47, 47, 47)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel10))
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addGap(42, 42, 42)
+                .addComponent(jLabel7)
+                .addContainerGap(77, Short.MAX_VALUE))
         );
 
         jPanel6.add(jPanel11);
@@ -294,7 +263,7 @@ public class panelLaporan extends javax.swing.JPanel {
         jButton1.setText("Cetak Laporan");
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
-        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Poppins", 1, 20)); // NOI18N
         jLabel1.setText("Pemasukan");
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
@@ -304,21 +273,20 @@ public class panelLaporan extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 558, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 539, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addGap(17, 17, 17))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
-                .addGap(0, 14, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING))))
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         jPanel12.add(jPanel13, java.awt.BorderLayout.PAGE_START);
@@ -327,20 +295,8 @@ public class panelLaporan extends javax.swing.JPanel {
         jPanel14.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 15, 15, 15));
         jPanel14.setLayout(new java.awt.BorderLayout());
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane2.setViewportView(jTable2);
-
-        jPanel14.add(jScrollPane2, java.awt.BorderLayout.CENTER);
+        jPanel8.setLayout(new java.awt.CardLayout());
+        jPanel14.add(jPanel8, java.awt.BorderLayout.CENTER);
 
         jPanel12.add(jPanel14, java.awt.BorderLayout.CENTER);
 
@@ -368,18 +324,12 @@ public class panelLaporan extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -394,13 +344,10 @@ public class panelLaporan extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel lblJudul;
     private javax.swing.JLabel lblSubJudul;
     private javax.swing.JPanel panelHeader;
     private javax.swing.JPanel panelKonten;
-    private javax.swing.JPanel panelPengeluaran1;
     // End of variables declaration//GEN-END:variables
 }
