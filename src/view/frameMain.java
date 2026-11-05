@@ -5,16 +5,26 @@
 package view;
 
 import com.formdev.flatlaf.ui.FlatLineBorder;
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Insets;
 import javax.swing.JPanel;
+import view.panel.panelDasboard;
+import view.panel.panelTransaksi;
+import view.panel.panelPesanan;
+import view.panel.panelPengeluaran;
+import view.panel.panelLaporan;
+import view.panel.panelProfil;
+import view.popup.popupKeluarAkun;
 
 /**
  *
  * @author Sirdzat
  */
 public class frameMain extends javax.swing.JFrame {
-    
+
+    private CardLayout cardLayout;
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameMain.class.getName());
 
     /**
@@ -24,10 +34,21 @@ public class frameMain extends javax.swing.JFrame {
         initComponents();
         panelLengkung(pnlNama);
         setActiveMenu(pnlDasboard);
+
+        cardLayout = (CardLayout) pConten.getLayout();
+
+        tambahPanel();
+
+        cardLayout.show(pConten, "dashboard");
+
+        setLocationRelativeTo(null);
+
+        cardLayout.show(pConten, "dashboard");
+
     }
-    
+
     void setActiveMenu(JPanel active) {
-        
+
         JPanel[] menu = {
             pnlDasboard,
             pnlTransaksi,
@@ -37,16 +58,16 @@ public class frameMain extends javax.swing.JFrame {
             pnlProfil,
             pnlLogout
         };
-        
+
         for (JPanel p : menu) {
-            
+
             Color warna = (p == active)
                     ? Color.decode("#F7CBD5")
                     : Color.decode("#FBDDE3");
-            
+
             p.setBackground(warna);
             p.setOpaque(true);
-            
+
             p.setBorder(new FlatLineBorder(
                     new Insets(0, 0, 0, 0),
                     warna,
@@ -63,6 +84,15 @@ public class frameMain extends javax.swing.JFrame {
                 1f,
                 15
         ));
+    }
+
+    private void tambahPanel() {
+        pConten.add(new panelDasboard(), "dashboard");
+        pConten.add(new panelTransaksi(), "transaksi");
+        pConten.add(new panelPesanan(), "pesanan");
+        pConten.add(new panelPengeluaran(), "pengeluaran");
+        pConten.add(new panelLaporan(), "laporan");
+        pConten.add(new panelProfil(), "profil");
     }
 
     /**
@@ -496,36 +526,46 @@ public class frameMain extends javax.swing.JFrame {
     private void pnlDasboardMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlDasboardMouseClicked
         // TODO add your handling code here:
         setActiveMenu(pnlDasboard);
+        cardLayout.show(pConten, "dashboard");
     }//GEN-LAST:event_pnlDasboardMouseClicked
 
     private void pnlTransaksiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlTransaksiMouseClicked
         // TODO add your handling code here:
         setActiveMenu(pnlTransaksi);
+        cardLayout.show(pConten, "transaksi");
     }//GEN-LAST:event_pnlTransaksiMouseClicked
 
     private void pnlPesananMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlPesananMouseClicked
         // TODO add your handling code here:
         setActiveMenu(pnlPesanan);
+        cardLayout.show(pConten, "pesanan");
     }//GEN-LAST:event_pnlPesananMouseClicked
 
     private void pnlPengeluaranMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlPengeluaranMouseClicked
         // TODO add your handling code here:
         setActiveMenu(pnlPengeluaran);
+        cardLayout.show(pConten, "pengeluaran");
     }//GEN-LAST:event_pnlPengeluaranMouseClicked
 
     private void pnlLaporanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlLaporanMouseClicked
         // TODO add your handling code here:
         setActiveMenu(pnlLaporan);
+        cardLayout.show(pConten, "laporan");
     }//GEN-LAST:event_pnlLaporanMouseClicked
 
     private void pnlProfilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlProfilMouseClicked
         // TODO add your handling code here:
         setActiveMenu(pnlProfil);
+        cardLayout.show(pConten, "profil");
+
     }//GEN-LAST:event_pnlProfilMouseClicked
 
     private void pnlLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlLogoutMouseClicked
         // TODO add your handling code here:
         setActiveMenu(pnlLogout);
+        popupKeluarAkun popup = new popupKeluarAkun(this, true);
+        popup.setLocationRelativeTo(this);
+        popup.setVisible(true);
     }//GEN-LAST:event_pnlLogoutMouseClicked
 
     /**
@@ -538,7 +578,7 @@ public class frameMain extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         com.formdev.flatlaf.FlatLightLaf.setup();
-        
+
         java.awt.EventQueue.invokeLater(() -> {
             new frameMain().setVisible(true);
         });

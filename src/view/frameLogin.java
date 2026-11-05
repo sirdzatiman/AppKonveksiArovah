@@ -31,14 +31,14 @@ public class frameLogin extends javax.swing.JFrame {
         panelLengkung(panelUsername);
     }
 
-void panelLengkung(JPanel p) {
-    p.setBorder(new FlatLineBorder(
-        new Insets(0, 0, 0, 0),
-        p.getBackground(),
-        1f,
-        20
-    ));
-}
+    void panelLengkung(JPanel p) {
+        p.setBorder(new FlatLineBorder(
+                new Insets(0, 0, 0, 0),
+                p.getBackground(),
+                1f,
+                20
+        ));
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -77,7 +77,7 @@ void panelLengkung(JPanel p) {
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnMasuk = new javax.swing.JButton();
         jPanel14 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
@@ -327,13 +327,13 @@ void panelLengkung(JPanel p) {
 
         jPanel11.add(jPanel13, java.awt.BorderLayout.LINE_START);
 
-        jButton1.setBackground(new java.awt.Color(225, 82, 125));
-        jButton1.setFont(new java.awt.Font("Poppins", 1, 30)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Masuk");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel11.add(jButton1, java.awt.BorderLayout.CENTER);
+        btnMasuk.setBackground(new java.awt.Color(225, 82, 125));
+        btnMasuk.setFont(new java.awt.Font("Poppins", 1, 30)); // NOI18N
+        btnMasuk.setForeground(new java.awt.Color(255, 255, 255));
+        btnMasuk.setText("Masuk");
+        btnMasuk.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMasuk.addActionListener(this::btnMasukActionPerformed);
+        jPanel11.add(btnMasuk, java.awt.BorderLayout.CENTER);
 
         jPanel8.add(jPanel11, java.awt.BorderLayout.PAGE_START);
 
@@ -494,9 +494,12 @@ void panelLengkung(JPanel p) {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMasukActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        frameMain main = new frameMain();
+        main.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnMasukActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -524,10 +527,10 @@ void panelLengkung(JPanel p) {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Plogo;
+    private javax.swing.JButton btnMasuk;
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler2;
     private javax.swing.Box.Filler filler3;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
