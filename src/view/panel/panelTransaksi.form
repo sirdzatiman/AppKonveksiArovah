@@ -25,7 +25,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="3"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,73,0,0,4,-74"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-35,0,0,4,15"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
@@ -54,7 +54,7 @@
                       <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="934" max="32767" attributes="0"/>
+                  <EmptySpace pref="767" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -65,7 +65,7 @@
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -150,11 +150,10 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="37" max="32767" attributes="0"/>
-                              <Component id="jButton1" min="-2" pref="86" max="-2" attributes="0"/>
+                              <Component id="jButton1" min="-2" pref="82" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jButton2" min="-2" pref="199" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -163,8 +162,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButton1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                                  <Component id="jButton2" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="jButton1" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                                  <Component id="jButton2" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="34" max="32767" attributes="0"/>
                           </Group>
@@ -178,7 +177,7 @@
                           <Color blue="7f" green="52" red="df" type="rgb"/>
                         </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="12" style="0"/>
+                          <Font name="Poppins" size="16" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -189,12 +188,15 @@
                     <Component class="javax.swing.JButton" name="jButton1">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="12" style="0"/>
+                          <Font name="Poppins" size="16" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="78" green="76" red="7e" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Batal "/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[120, 50]"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -214,19 +216,21 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabel9" alignment="0" min="-2" pref="174" max="-2" attributes="0"/>
-                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField7" max="32767" attributes="0"/>
-                                  <Component id="jTextField8" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField10" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jCalendar2" alignment="0" pref="271" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jDateChooser1" pref="271" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jLabel9" alignment="0" min="-2" pref="174" max="-2" attributes="0"/>
+                                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jTextField7" pref="271" max="32767" attributes="0"/>
+                                      <Component id="jTextField8" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField10" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jLabel10" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                                      <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                               <EmptySpace pref="15" max="32767" attributes="0"/>
                           </Group>
@@ -253,9 +257,9 @@
                               <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jCalendar2" min="-2" pref="26" max="-2" attributes="0"/>
-                              <EmptySpace pref="268" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jDateChooser1" min="-2" pref="34" max="-2" attributes="0"/>
+                              <EmptySpace pref="60" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -264,65 +268,77 @@
                     <Component class="javax.swing.JLabel" name="jLabel9">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="12" style="1"/>
+                          <Font name="Poppins SemiBold" size="18" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Total Pembayaran "/>
+                        <Property name="text" type="java.lang.String" value="Total Pembayaran* "/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTextField7">
                       <Properties>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="99" green="99" red="99" type="rgb"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Poppins Medium" size="14" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Rp.0"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[64, 35]"/>
+                        </Property>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel10">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="12" style="1"/>
+                          <Font name="Poppins SemiBold" size="18" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="DP"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTextField8">
                       <Properties>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="99" green="99" red="99" type="rgb"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Poppins Medium" size="14" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="RP.0"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[64, 35]"/>
+                        </Property>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel11">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="12" style="1"/>
+                          <Font name="Poppins SemiBold" size="18" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Biaya Tambahan "/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTextField9">
                       <Properties>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="99" green="99" red="99" type="rgb"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Poppins Medium" size="14" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="RP.0"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[64, 35]"/>
+                        </Property>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel12">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="12" style="1"/>
+                          <Font name="Poppins SemiBold" size="18" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Sisa Pembayaran "/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTextField10">
                       <Properties>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="99" green="99" red="99" type="rgb"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Poppins Medium" size="14" style="0"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Rp.0"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[64, 35]"/>
+                        </Property>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField10ActionPerformed"/>
@@ -331,12 +347,12 @@
                     <Component class="javax.swing.JLabel" name="jLabel13">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="14" style="1"/>
+                          <Font name="Poppins SemiBold" size="18" style="0"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Deadline Pesanan "/>
+                        <Property name="text" type="java.lang.String" value="Deadline Pesanan *"/>
                       </Properties>
                     </Component>
-                    <Component class="com.toedter.calendar.JCalendar" name="jCalendar2">
+                    <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
                     </Component>
                   </SubComponents>
                 </Container>
@@ -365,17 +381,10 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel3">
+                    <Container class="javax.swing.JPanel" name="jPanel32">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="f6" green="f4" red="fc" type="rgb"/>
-                        </Property>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Poppins SemiBold" size="12" style="1"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="Request"/>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[37, 20]"/>
+                          <Dimension value="[860, 15]"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -383,51 +392,66 @@
                           <BorderConstraints direction="First"/>
                         </Constraint>
                       </Constraints>
-                    </Component>
-                    <Container class="javax.swing.JPanel" name="jPanel23">
-                      <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
-                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="693" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel34">
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
                           <BorderConstraints direction="Center"/>
                         </Constraint>
                       </Constraints>
 
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="634" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="55" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="jLabel19">
+                        <Component class="javax.swing.JLabel" name="jLabel17">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Poppins SemiBold" size="12" style="0"/>
+                              <Font name="Poppins" size="16" style="1"/>
                             </Property>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="99" green="99" red="99" type="rgb"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="contoh tambahan bordir, ukuran dll"/>
+                            <Property name="text" type="java.lang.String" value="Request "/>
                           </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                              <BorderConstraints direction="First"/>
+                            </Constraint>
+                          </Constraints>
                         </Component>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                              <BorderConstraints direction="Center"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="jTextArea2">
+                              <Properties>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Poppins" size="14" style="0"/>
+                                </Property>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value="Contoh Tambah bordir, ukuran dll"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
                       </SubComponents>
                     </Container>
                   </SubComponents>
@@ -455,6 +479,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
                         <Property name="columns" type="int" value="0"/>
+                        <Property name="horizontalGap" type="int" value="15"/>
                         <Property name="rows" type="int" value="1"/>
                       </Layout>
                       <SubComponents>
@@ -464,7 +489,7 @@
                               <Color blue="f6" green="f4" red="fc" type="rgb"/>
                             </Property>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Poppins SemiBold" size="12" style="1"/>
+                              <Font name="Poppins" size="16" style="1"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Nama Pelanggan* "/>
                           </Properties>
@@ -472,7 +497,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel20">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Poppins SemiBold" size="12" style="1"/>
+                              <Font name="Poppins" size="16" style="1"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="No.Whatsapp*"/>
                           </Properties>
@@ -480,7 +505,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel22">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Poppins SemiBold" size="12" style="1"/>
+                              <Font name="Poppins" size="16" style="1"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Item*"/>
                           </Properties>
@@ -497,6 +522,11 @@
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                       <SubComponents>
                         <Container class="javax.swing.JPanel" name="jPanel26">
+                          <Properties>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[576, 35]"/>
+                            </Property>
+                          </Properties>
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
                               <BorderConstraints direction="First"/>
@@ -512,10 +542,7 @@
                             <Component class="javax.swing.JTextField" name="jTextField1">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Poppins SemiBold" size="12" style="0"/>
-                                </Property>
-                                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="99" green="99" red="99" type="rgb"/>
+                                  <Font name="Poppins Medium" size="14" style="0"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="masukan nama pelanggan"/>
                               </Properties>
@@ -525,8 +552,8 @@
                             </Component>
                             <Component class="javax.swing.JTextField" name="jTextField2">
                               <Properties>
-                                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="99" green="99" red="99" type="rgb"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Poppins Medium" size="14" style="0"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="085234567897"/>
                               </Properties>
@@ -534,10 +561,7 @@
                             <Component class="javax.swing.JTextField" name="jTextField3">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Poppins SemiBold" size="12" style="0"/>
-                                </Property>
-                                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="99" green="99" red="99" type="rgb"/>
+                                  <Font name="Poppins Medium" size="14" style="0"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="contoh : gamis "/>
                               </Properties>
@@ -572,13 +596,14 @@
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
                                 <Property name="columns" type="int" value="0"/>
+                                <Property name="horizontalGap" type="int" value="15"/>
                                 <Property name="rows" type="int" value="1"/>
                               </Layout>
                               <SubComponents>
                                 <Component class="javax.swing.JLabel" name="jLabel4">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Poppins SemiBold" size="12" style="1"/>
+                                      <Font name="Poppins" size="16" style="1"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Kain *"/>
                                   </Properties>
@@ -586,15 +611,15 @@
                                 <Component class="javax.swing.JLabel" name="jLabel6">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Poppins SemiBold" size="12" style="1"/>
+                                      <Font name="Poppins" size="16" style="1"/>
                                     </Property>
-                                    <Property name="text" type="java.lang.String" value="Model "/>
+                                    <Property name="text" type="java.lang.String" value="Model *"/>
                                   </Properties>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="jLabel5">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Poppins SemiBold" size="12" style="1"/>
+                                      <Font name="Poppins" size="16" style="1"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Warna*"/>
                                   </Properties>
@@ -618,7 +643,7 @@
                                 <Container class="javax.swing.JPanel" name="jPanel30">
                                   <Properties>
                                     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                                      <Dimension value="[625, 25]"/>
+                                      <Dimension value="[625, 35]"/>
                                     </Property>
                                   </Properties>
                                   <Constraints>
@@ -636,10 +661,7 @@
                                     <Component class="javax.swing.JTextField" name="jTextField5">
                                       <Properties>
                                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Poppins SemiBold" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                          <Color blue="99" green="99" red="99" type="rgb"/>
+                                          <Font name="Poppins Medium" size="14" style="0"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="masukan jenis kain"/>
                                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -650,10 +672,7 @@
                                     <Component class="javax.swing.JTextField" name="jTextField4">
                                       <Properties>
                                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Poppins SemiBold" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                          <Color blue="99" green="99" red="99" type="rgb"/>
+                                          <Font name="Poppins Medium" size="14" style="0"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="masukan model"/>
                                       </Properties>
@@ -661,10 +680,7 @@
                                     <Component class="javax.swing.JTextField" name="jTextField6">
                                       <Properties>
                                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Poppins SemiBold" size="12" style="0"/>
-                                        </Property>
-                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                          <Color blue="99" green="99" red="99" type="rgb"/>
+                                          <Font name="Poppins Medium" size="14" style="0"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="masukan model "/>
                                       </Properties>
@@ -695,9 +711,6 @@
                   <SubComponents>
                     <Container class="javax.swing.JPanel" name="jPanel13">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[679, 50]"/>
                         </Property>
@@ -708,71 +721,139 @@
                         </Constraint>
                       </Constraints>
 
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                                  <Component id="jLabel14" min="-2" pref="179" max="-2" attributes="0"/>
-                                  <EmptySpace pref="500" max="32767" attributes="0"/>
-                                  <Component id="jButton4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="jPanel31">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[860, 80]"/>
+                            </Property>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                              <BorderConstraints direction="Center"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                          <SubComponents>
+                            <Container class="javax.swing.JPanel" name="jPanel23">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                </Property>
+                                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                  <Dimension value="[230, 40]"/>
+                                </Property>
+                              </Properties>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                  <BorderConstraints direction="After"/>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout>
+                                <DimensionLayout dim="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                          <Component id="jButton4" min="-2" pref="37" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace pref="21" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                                <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                                          <Component id="jLabel14" min="-2" pref="29" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="jButton4" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jButton4" alignment="1" pref="34" max="32767" attributes="0"/>
                                               <Component id="jButton3" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="7" max="32767" attributes="0"/>
+                                </DimensionLayout>
+                              </Layout>
+                              <SubComponents>
+                                <Component class="javax.swing.JButton" name="jButton4">
+                                  <Properties>
+                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="7f" green="52" red="df" type="rgb"/>
+                                    </Property>
+                                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                      <Image iconType="3" name="/icon/Ikon Tempat Sampah Putih Minimalis 2 (2).png"/>
+                                    </Property>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JButton" name="jButton3">
+                                  <Properties>
+                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="7f" green="52" red="df" type="rgb"/>
+                                    </Property>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Poppins" size="14" style="1"/>
+                                    </Property>
+                                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Tambah Ukuran "/>
+                                  </Properties>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Component class="javax.swing.JLabel" name="jLabel14">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Poppins" size="16" style="1"/>
+                                </Property>
+                                <Property name="text" type="java.lang.String" value="Rincian Ukuran &amp; Jumlah"/>
+                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                  <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                    <EmptyBorder bottom="1" left="15" right="1" top="1"/>
+                                  </Border>
+                                </Property>
+                              </Properties>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                  <BorderConstraints direction="Before"/>
+                                </Constraint>
+                              </Constraints>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="jPanel33">
+                          <Properties>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[860, 10]"/>
+                            </Property>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                              <BorderConstraints direction="First"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace min="0" pref="693" max="32767" attributes="0"/>
                               </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JLabel" name="jLabel14">
-                          <Properties>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Poppins SemiBold" size="12" style="1"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="Rincian Ukuran &amp; Jumlah"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="jButton3">
-                          <Properties>
-                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="7f" green="52" red="df" type="rgb"/>
-                            </Property>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="Tambah Ukuran "/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="jButton4">
-                          <Properties>
-                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="7f" green="52" red="df" type="rgb"/>
-                            </Property>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/icon/Ikon Tempat Sampah Putih Minimalis 2 (2).png"/>
-                            </Property>
-                          </Properties>
-                        </Component>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                        </Container>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel6">
@@ -794,23 +875,31 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" min="-2" pref="21" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="700" max="32767" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" pref="213" max="-2" attributes="0"/>
+                                  <EmptySpace pref="280" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel8" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="jLabel7" alignment="1" pref="30" max="32767" attributes="0"/>
+                                              <Component id="jLabel18" alignment="1" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace pref="15" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -819,20 +908,26 @@
                         <Component class="javax.swing.JLabel" name="jLabel18">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Poppins SemiBold" size="12" style="0"/>
+                              <Font name="Poppins SemiBold" size="14" style="0"/>
                             </Property>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/icon/Lingkaran Merah Muda Transparan 1.png"/>
-                            </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="Jumlah Pesanan : "/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel7">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Poppins SemiBold" size="12" style="0"/>
+                              <Font name="Poppins SemiBold" size="14" style="0"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="0"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel8">
+                          <Properties>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/icon/Lingkaran Merah Muda Transparan 1.png"/>
+                            </Property>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -844,7 +939,7 @@
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
-                            <EmptyBorder bottom="1" left="16" right="16" top="1"/>
+                            <EmptyBorder bottom="1" left="16" right="16" top="15"/>
                           </Border>
                         </Property>
                       </Properties>
@@ -868,7 +963,7 @@
                             <Container class="javax.swing.JPanel" name="jPanel15">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="f6" green="f4" red="fc" type="rgb"/>
+                                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                                 </Property>
                                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                                   <Dimension value="[647, 40]"/>
@@ -896,7 +991,7 @@
                                           <Color blue="f6" green="f4" red="fc" type="rgb"/>
                                         </Property>
                                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Segoe UI Semibold" size="14" style="1"/>
+                                          <Font name="Poppins" size="16" style="1"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="0"/>
                                         <Property name="text" type="java.lang.String" value="Ukuran "/>
@@ -916,7 +1011,7 @@
                                     <Component class="javax.swing.JLabel" name="jLabel16">
                                       <Properties>
                                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Poppins SemiBold" size="12" style="1"/>
+                                          <Font name="Poppins" size="16" style="1"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="0"/>
                                         <Property name="text" type="java.lang.String" value="Jumlah(pcs)"/>
@@ -961,6 +1056,9 @@
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                                   <SubComponents>
                                     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                                      <Properties>
+                                        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+                                      </Properties>
                                       <Constraints>
                                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
                                           <BorderConstraints direction="Center"/>
@@ -983,7 +1081,7 @@
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="jComboBox1" max="32767" attributes="0"/>
                                                   <Component id="jComboBox11" max="32767" attributes="0"/>
-                                                  <Component id="jComboBox12" pref="342" max="32767" attributes="0"/>
+                                                  <Component id="jComboBox12" pref="406" max="32767" attributes="0"/>
                                               </Group>
                                             </DimensionLayout>
                                             <DimensionLayout dim="1">
@@ -1002,6 +1100,9 @@
                                           <SubComponents>
                                             <Component class="javax.swing.JComboBox" name="jComboBox1">
                                               <Properties>
+                                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                  <Font name="Poppins" size="14" style="0"/>
+                                                </Property>
                                                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                                                   <StringArray count="4">
                                                     <StringItem index="0" value="Item 1"/>
@@ -1017,6 +1118,9 @@
                                             </Component>
                                             <Component class="javax.swing.JComboBox" name="jComboBox11">
                                               <Properties>
+                                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                  <Font name="Poppins" size="14" style="0"/>
+                                                </Property>
                                                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                                                   <StringArray count="4">
                                                     <StringItem index="0" value="Item 1"/>
@@ -1032,6 +1136,9 @@
                                             </Component>
                                             <Component class="javax.swing.JComboBox" name="jComboBox12">
                                               <Properties>
+                                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                  <Font name="Poppins" size="14" style="0"/>
+                                                </Property>
                                                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                                                   <StringArray count="4">
                                                     <StringItem index="0" value="Item 1"/>
@@ -1063,6 +1170,9 @@
                                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                                   <SubComponents>
                                     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                                      <Properties>
+                                        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+                                      </Properties>
                                       <Constraints>
                                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
                                           <BorderConstraints direction="Center"/>
@@ -1087,7 +1197,7 @@
                                                       <Group type="103" groupAlignment="1" attributes="0">
                                                           <Component id="jTextField11" alignment="0" max="32767" attributes="0"/>
                                                           <Component id="jTextField12" alignment="1" max="32767" attributes="0"/>
-                                                          <Component id="jTextField13" alignment="0" pref="336" max="32767" attributes="0"/>
+                                                          <Component id="jTextField13" alignment="0" pref="400" max="32767" attributes="0"/>
                                                       </Group>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                   </Group>
@@ -1101,7 +1211,7 @@
                                                       <Component id="jTextField12" min="-2" pref="35" max="-2" attributes="0"/>
                                                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                                       <Component id="jTextField13" min="-2" pref="35" max="-2" attributes="0"/>
-                                                      <EmptySpace min="0" pref="162" max="32767" attributes="0"/>
+                                                      <EmptySpace min="0" pref="202" max="32767" attributes="0"/>
                                                   </Group>
                                               </Group>
                                             </DimensionLayout>
@@ -1109,6 +1219,9 @@
                                           <SubComponents>
                                             <Component class="javax.swing.JTextField" name="jTextField11">
                                               <Properties>
+                                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                  <Font name="Poppins" size="14" style="0"/>
+                                                </Property>
                                                 <Property name="text" type="java.lang.String" value="jTextField11"/>
                                               </Properties>
                                               <Events>
@@ -1117,6 +1230,9 @@
                                             </Component>
                                             <Component class="javax.swing.JTextField" name="jTextField12">
                                               <Properties>
+                                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                  <Font name="Poppins" size="14" style="0"/>
+                                                </Property>
                                                 <Property name="text" type="java.lang.String" value="jTextField11"/>
                                               </Properties>
                                               <Events>
@@ -1125,6 +1241,9 @@
                                             </Component>
                                             <Component class="javax.swing.JTextField" name="jTextField13">
                                               <Properties>
+                                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                                  <Font name="Poppins" size="14" style="0"/>
+                                                </Property>
                                                 <Property name="text" type="java.lang.String" value="jTextField11"/>
                                               </Properties>
                                               <Events>
