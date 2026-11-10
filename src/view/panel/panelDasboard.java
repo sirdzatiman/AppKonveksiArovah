@@ -3,6 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view.panel;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.JPanel;
+import javax.swing.JComponent;
+import javax.swing.BorderFactory;
 
 /**
  *
@@ -15,6 +21,45 @@ public class panelDasboard extends javax.swing.JPanel {
      */
     public panelDasboard() {
         initComponents();
+        
+        panelLengkung(jPanel4);
+        panelLengkung(jPanel7);
+        panelLengkung(jPanel8);
+        panelLengkung(jPanel6);
+        
+        
+    }
+    
+    
+    void panelLengkung(JPanel p) {
+        p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+        p.setUI(new javax.swing.plaf.PanelUI() {
+            @Override
+            public void paint(Graphics g, JComponent c) {
+                Graphics2D g2 = (Graphics2D) g.create();
+
+                g2.setRenderingHint(
+                    RenderingHints.KEY_ANTIALIASING,
+                    RenderingHints.VALUE_ANTIALIAS_ON
+                );
+
+                g2.setColor(c.getBackground());
+                g2.fillRoundRect(
+                    0, 0,
+                    c.getWidth(),
+                    c.getHeight(),
+                    20, 20
+                );
+
+                g2.dispose();
+
+                super.paint(g, c);
+            }
+        });
+
+        p.setOpaque(false);
+        p.repaint();
     }
 
     /**

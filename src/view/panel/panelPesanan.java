@@ -3,7 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view.panel;
-
+import com.formdev.flatlaf.FlatClientProperties;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
 /**
  *
  * @author Sirdzat
@@ -15,7 +21,64 @@ public class panelPesanan extends javax.swing.JPanel {
      */
     public panelPesanan() {
         initComponents();
+        
+    jTextField5.setOpaque(false);
+    jTextField5.setBorder(BorderFactory.createEmptyBorder());
+        
+    // Melengkungkan JPanel
+    panelLengkung(jPanel14);
+
+    // Melengkungkan JButton
+    jToggleButton10.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    jToggleButton11.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    jToggleButton12.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    jButton1.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    jButton2.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+    
+    jPanel14.setOpaque(false);
+    jPanel14.repaint();
+  
     }
+    void panelLengkung(JPanel p) {
+    p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+    p.setUI(new javax.swing.plaf.PanelUI() {
+        @Override
+        public void paint(Graphics g, JComponent c) {
+            Graphics2D g2 = (Graphics2D) g.create();
+
+            g2.setRenderingHint(
+                RenderingHints.KEY_ANTIALIASING,
+                RenderingHints.VALUE_ANTIALIAS_ON
+            );
+
+            g2.setColor(c.getBackground());
+            g2.fillRoundRect(
+                0, 0, c.getWidth(), c.getHeight(), 20, 20
+            );
+
+            g2.dispose();
+            super.paint(g, c);
+        }
+    });
+
+    p.setOpaque(false);
+    p.repaint();
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -44,10 +107,12 @@ public class panelPesanan extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
 
+        setBackground(new java.awt.Color(252, 244, 246));
         setBorder(javax.swing.BorderFactory.createEmptyBorder(14, 18, 18, 20));
         setPreferredSize(new java.awt.Dimension(966, 714));
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setBackground(new java.awt.Color(252, 244, 246));
         jPanel1.setMinimumSize(new java.awt.Dimension(100, 91));
         jPanel1.setPreferredSize(new java.awt.Dimension(966, 91));
 
@@ -82,9 +147,11 @@ public class panelPesanan extends javax.swing.JPanel {
 
         jPanel2.setLayout(new java.awt.BorderLayout());
 
+        jPanel3.setBackground(new java.awt.Color(252, 244, 246));
         jPanel3.setPreferredSize(new java.awt.Dimension(966, 75));
         jPanel3.setLayout(new java.awt.BorderLayout());
 
+        jPanel10.setBackground(new java.awt.Color(252, 244, 246));
         jPanel10.setPreferredSize(new java.awt.Dimension(410, 75));
 
         jToggleButton10.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
@@ -132,9 +199,11 @@ public class panelPesanan extends javax.swing.JPanel {
 
         jPanel4.setLayout(new java.awt.BorderLayout());
 
+        jPanel5.setBackground(new java.awt.Color(252, 244, 246));
         jPanel5.setPreferredSize(new java.awt.Dimension(966, 67));
 
         jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jPanel14.setPreferredSize(new java.awt.Dimension(373, 41));
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -142,6 +211,7 @@ public class panelPesanan extends javax.swing.JPanel {
 
         jTextField5.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
         jTextField5.setText("Cari nama/no.pesanan");
+        jTextField5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         jTextField5.setPreferredSize(new java.awt.Dimension(212, 27));
         jTextField5.addActionListener(this::jTextField1ActionPerformed);
 
@@ -152,7 +222,7 @@ public class panelPesanan extends javax.swing.JPanel {
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE))
+                .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
