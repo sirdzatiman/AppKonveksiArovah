@@ -3,6 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view.panel;
+import com.formdev.flatlaf.FlatClientProperties;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
 
 /**
  *
@@ -15,7 +22,64 @@ public class panelPengeluaran extends javax.swing.JPanel {
      */
     public panelPengeluaran() {
         initComponents();
+     
+        // Melengkungkan JTextField
+        jTextField1.putClientProperty(
+            FlatClientProperties.STYLE, "arc: 20"
+        );
+
+        jTextField2.putClientProperty(
+            FlatClientProperties.STYLE, "arc: 20"
+        );
+
+        jTextField4.putClientProperty(
+            FlatClientProperties.STYLE, "arc: 20"
+        );
+
+        // Melengkungkan JComboBox
+        jComboBox1.putClientProperty(
+            FlatClientProperties.STYLE, "arc: 20"
+        );
+
+        // Melengkungkan JButton
+        jButton1.putClientProperty(
+            FlatClientProperties.STYLE, "arc: 20"
+        );
+
+        jButton2.putClientProperty(
+            FlatClientProperties.STYLE, "arc: 20"
+        );
+
+        // Melengkungkan panel
+        panelLengkung(jPanel7);
     }
+
+    void panelLengkung(JPanel p) {
+        p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+        p.setUI(new javax.swing.plaf.PanelUI() {
+            @Override
+            public void paint(Graphics g, JComponent c) {
+                Graphics2D g2 = (Graphics2D) g.create();
+
+                g2.setRenderingHint(
+                    RenderingHints.KEY_ANTIALIASING,
+                    RenderingHints.VALUE_ANTIALIAS_ON
+                );
+
+                g2.setColor(c.getBackground());
+                g2.fillRoundRect(0, 0, c.getWidth(), c.getHeight(), 20, 20);
+
+                g2.dispose();
+
+                super.paint(g, c);
+            }
+        });
+
+        p.setOpaque(false);
+        p.repaint();
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,9 +90,6 @@ public class panelPengeluaran extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
@@ -48,49 +109,21 @@ public class panelPengeluaran extends javax.swing.JPanel {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(252, 244, 246));
         setBorder(javax.swing.BorderFactory.createEmptyBorder(14, 18, 18, 20));
         setLayout(new java.awt.BorderLayout());
 
-        jPanel1.setBackground(new java.awt.Color(252, 244, 246));
-        jPanel1.setPreferredSize(new java.awt.Dimension(966, 91));
-
-        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
-        jLabel1.setText("Pengeluaran");
-
-        jLabel2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        jLabel2.setText("Catat pembelian bahan ke supplier");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(702, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
-        add(jPanel1, java.awt.BorderLayout.PAGE_START);
-
+        jPanel6.setBackground(new java.awt.Color(252, 244, 246));
         jPanel6.setLayout(new java.awt.BorderLayout(15, 0));
 
         jPanel9.setPreferredSize(new java.awt.Dimension(330, 673));
         jPanel9.setLayout(new java.awt.BorderLayout());
 
-        jPanel7.setBackground(new java.awt.Color(251, 240, 243));
+        jPanel7.setBackground(new java.awt.Color(252, 244, 246));
         jPanel7.setPreferredSize(new java.awt.Dimension(350, 500));
 
         jLabel3.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
@@ -157,7 +190,7 @@ public class panelPengeluaran extends javax.swing.JPanel {
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -239,6 +272,38 @@ public class panelPengeluaran extends javax.swing.JPanel {
         jPanel2.add(jScrollPane2, java.awt.BorderLayout.CENTER);
 
         jPanel6.add(jPanel2, java.awt.BorderLayout.CENTER);
+
+        jPanel1.setBackground(new java.awt.Color(252, 244, 246));
+        jPanel1.setPreferredSize(new java.awt.Dimension(966, 91));
+
+        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
+        jLabel1.setText("Pengeluaran");
+
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        jLabel2.setText("Catat pembelian bahan ke supplier");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(702, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        jPanel6.add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
         add(jPanel6, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents

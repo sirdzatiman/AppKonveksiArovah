@@ -3,6 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view.panel;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.JPanel;
+import javax.swing.JComponent;
+import javax.swing.BorderFactory;
+import com.formdev.flatlaf.FlatClientProperties;
 
 /**
  *
@@ -15,7 +22,66 @@ public class panelLaporan extends javax.swing.JPanel {
      */
     public panelLaporan() {
         initComponents();
-    }
+    // Melengkungkan JComboBox
+    jComboBox1.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    jComboBox2.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    // Melengkungkan JTextField
+    jTextField2.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    // Melengkungkan JButton
+    jButton1.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    jButton2.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+
+    // Melengkungkan JPanel
+    panelLengkung(jPanel7);
+    panelLengkung(jPanel10);
+    panelLengkung(jPanel11);
+    panelLengkung(jPanel12);
+}
+    void panelLengkung(JPanel p) {
+    p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+    p.setUI(new javax.swing.plaf.PanelUI() {
+        @Override
+        public void paint(Graphics g, JComponent c) {
+            Graphics2D g2 = (Graphics2D) g.create();
+
+            g2.setRenderingHint(
+                RenderingHints.KEY_ANTIALIASING,
+                RenderingHints.VALUE_ANTIALIAS_ON
+            );
+
+            g2.setColor(c.getBackground());
+
+            g2.fillRoundRect(
+            0, 0,
+            c.getWidth(),
+            c.getHeight(),
+            40, 40
+        );
+
+            g2.dispose();
+
+            super.paint(g, c);
+        }
+    });
+
+    p.setOpaque(false);
+    p.repaint();
+}
 
     /**
      * This method is called from within the constructor to initialize the form.

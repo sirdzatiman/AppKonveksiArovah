@@ -3,9 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
-
-import com.formdev.flatlaf.ui.FlatLineBorder;
-import java.awt.Insets;
+import java.awt.*;
+import javax.swing.*;
+import com.formdev.flatlaf.FlatClientProperties;
+import java.awt.Color;
+import java.awt.BasicStroke;
 import javax.swing.JPanel;
 
 /**
@@ -21,25 +23,66 @@ public class frameLogin extends javax.swing.JFrame {
      */
     public frameLogin() {
         initComponents();
-        panelLengkung(panelUtama);
-        panelLengkung(panelKanan);
-        panelLengkung(jPanel16);
-        panelLengkung(jPanel9);
-        panelLengkung(jPanel8);
-        panelLengkung(jPanel19);
-        panelLengkung(jPanel18);
-        panelLengkung(panelUsername);
-    }
+        
+    // JTextField username
+    jTextField1.setOpaque(false);
+    jTextField1.setBorder(BorderFactory.createEmptyBorder());
 
-    void panelLengkung(JPanel p) {
-        p.setBorder(new FlatLineBorder(
-                new Insets(0, 0, 0, 0),
-                p.getBackground(),
-                1f,
-                20
-        ));
-    }
+    // JPasswordField password
+    jPasswordField2.setOpaque(false);
+    jPasswordField2.setBorder(BorderFactory.createEmptyBorder());
+        
+    // Melengkungkan tombol Masuk
+    btnMasuk.putClientProperty(
+        FlatClientProperties.STYLE, "arc: 20"
+    );
+    
+    panelLengkung(panelUtama);
+    panelLengkung(panelKanan);
+    panelLengkung(jPanel16);
+    panelLengkung(jPanel9);
+    panelLengkung(jPanel8);
+    panelLengkung(jPanel19);
+    panelLengkung(jPanel18);
 
+    // Panel username dan password
+    panelLengkung(panelUsername);
+    panelLengkung(panelPassword);
+}
+
+   void panelLengkung(JPanel p) {
+    p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+    p.setUI(new javax.swing.plaf.PanelUI() {
+        @Override
+        public void paint(Graphics g, JComponent c) {
+            Graphics2D g2 = (Graphics2D) g.create();
+
+            g2.setRenderingHint(
+                RenderingHints.KEY_ANTIALIASING,
+                RenderingHints.VALUE_ANTIALIAS_ON
+            );
+
+            g2.setColor(c.getBackground());
+            g2.fillRoundRect(0, 0, c.getWidth(), c.getHeight(), 20, 20);
+
+            // Pinggiran abu-abu hanya untuk dua panel
+            if (c == panelUsername || c == panelPassword) {
+                g2.setColor(new Color(190, 190, 190));
+                g2.setStroke(new BasicStroke(1f));
+                g2.drawRoundRect(
+                    0, 0, c.getWidth() - 1, c.getHeight() - 1, 20, 20
+                );
+            }
+
+            g2.dispose();
+            super.paint(g, c);
+        }
+    });
+
+    p.setOpaque(false);
+    p.repaint();
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -167,6 +210,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         Plogo.setLayout(new javax.swing.BoxLayout(Plogo, javax.swing.BoxLayout.Y_AXIS));
 
+        jPanel16.setBackground(new java.awt.Color(252, 244, 246));
         jPanel16.setLayout(new javax.swing.BoxLayout(jPanel16, javax.swing.BoxLayout.Y_AXIS));
         jPanel16.add(filler2);
 
@@ -190,6 +234,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel17.setLayout(new java.awt.BorderLayout());
 
+        jPanel18.setBackground(new java.awt.Color(252, 244, 246));
         jPanel18.setMinimumSize(new java.awt.Dimension(595, 65));
         jPanel18.setPreferredSize(new java.awt.Dimension(595, 65));
 
@@ -206,6 +251,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel17.add(jPanel18, java.awt.BorderLayout.PAGE_END);
 
+        jPanel19.setBackground(new java.awt.Color(252, 244, 246));
         jPanel19.setMinimumSize(new java.awt.Dimension(595, 65));
         jPanel19.setPreferredSize(new java.awt.Dimension(595, 65));
 
@@ -222,6 +268,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel17.add(jPanel19, java.awt.BorderLayout.PAGE_START);
 
+        jPanel20.setBackground(new java.awt.Color(252, 244, 246));
         jPanel20.setMinimumSize(new java.awt.Dimension(66, 592));
         jPanel20.setPreferredSize(new java.awt.Dimension(66, 592));
 
@@ -238,6 +285,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel17.add(jPanel20, java.awt.BorderLayout.LINE_END);
 
+        jPanel21.setBackground(new java.awt.Color(252, 244, 246));
         jPanel21.setMinimumSize(new java.awt.Dimension(66, 592));
         jPanel21.setPreferredSize(new java.awt.Dimension(66, 592));
 
@@ -257,7 +305,7 @@ public class frameLogin extends javax.swing.JFrame {
         panelKanan.setBackground(new java.awt.Color(255, 255, 255));
         panelKanan.setLayout(new java.awt.BorderLayout());
 
-        jPanel7.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setMinimumSize(new java.awt.Dimension(463, 108));
         jPanel7.setPreferredSize(new java.awt.Dimension(463, 108));
         jPanel7.setLayout(new java.awt.BorderLayout());
@@ -410,6 +458,7 @@ public class frameLogin extends javax.swing.JFrame {
         jPanel29.setLayout(new javax.swing.BoxLayout(jPanel29, javax.swing.BoxLayout.PAGE_AXIS));
 
         panelUsername.setBackground(new java.awt.Color(255, 255, 255));
+        panelUsername.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 1, 1, 5));
         panelUsername.setMaximumSize(new java.awt.Dimension(3330, 63));
         panelUsername.setPreferredSize(new java.awt.Dimension(330, 63));
         panelUsername.setLayout(new java.awt.BorderLayout());
@@ -420,6 +469,7 @@ public class frameLogin extends javax.swing.JFrame {
         jTextField1.setFont(new java.awt.Font("Poppins", 0, 17)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(126, 118, 120));
         jTextField1.setText("Username");
+        jTextField1.setBorder(javax.swing.BorderFactory.createEmptyBorder(7, 1, 1, 7));
         jTextField1.addActionListener(this::jTextField1ActionPerformed);
         panelUsername.add(jTextField1, java.awt.BorderLayout.CENTER);
 
@@ -445,6 +495,7 @@ public class frameLogin extends javax.swing.JFrame {
         jPanel29.add(jPanel23);
 
         panelPassword.setBackground(new java.awt.Color(255, 255, 255));
+        panelPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         panelPassword.setMaximumSize(new java.awt.Dimension(3330, 63));
         panelPassword.setPreferredSize(new java.awt.Dimension(330, 63));
         panelPassword.setLayout(new java.awt.BorderLayout());
@@ -455,6 +506,7 @@ public class frameLogin extends javax.swing.JFrame {
         jPasswordField2.setFont(new java.awt.Font("Poppins", 0, 17)); // NOI18N
         jPasswordField2.setForeground(new java.awt.Color(126, 118, 120));
         jPasswordField2.setText("jPasswordField1");
+        jPasswordField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         panelPassword.add(jPasswordField2, java.awt.BorderLayout.CENTER);
 
         jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Mata tertutup.png"))); // NOI18N

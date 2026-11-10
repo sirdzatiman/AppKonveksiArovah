@@ -15,7 +15,13 @@ public class panelTransaksi extends javax.swing.JPanel {
      */
     public panelTransaksi() {
         initComponents();
+  
     }
+    
+  
+   
+    
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -228,16 +234,15 @@ public class panelTransaksi extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel11)
-                        .addComponent(jLabel12)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel13)))
+                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
+                    .addComponent(jTextField8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -275,6 +280,7 @@ public class panelTransaksi extends javax.swing.JPanel {
         jPanel11.setPreferredSize(new java.awt.Dimension(670, 100));
         jPanel11.setLayout(new java.awt.BorderLayout());
 
+        jPanel32.setBackground(new java.awt.Color(252, 244, 246));
         jPanel32.setPreferredSize(new java.awt.Dimension(860, 15));
 
         javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
@@ -290,8 +296,10 @@ public class panelTransaksi extends javax.swing.JPanel {
 
         jPanel11.add(jPanel32, java.awt.BorderLayout.PAGE_START);
 
+        jPanel34.setBackground(new java.awt.Color(252, 244, 246));
         jPanel34.setLayout(new java.awt.BorderLayout());
 
+        jLabel17.setBackground(new java.awt.Color(252, 244, 246));
         jLabel17.setFont(new java.awt.Font("Poppins", 1, 16)); // NOI18N
         jLabel17.setText("Request ");
         jPanel34.add(jLabel17, java.awt.BorderLayout.PAGE_START);
@@ -311,6 +319,7 @@ public class panelTransaksi extends javax.swing.JPanel {
         jPanel12.setPreferredSize(new java.awt.Dimension(679, 115));
         jPanel12.setLayout(new java.awt.BorderLayout());
 
+        jPanel24.setBackground(new java.awt.Color(252, 244, 246));
         jPanel24.setLayout(new java.awt.GridLayout(1, 0, 15, 0));
 
         jLabel21.setBackground(new java.awt.Color(252, 244, 246));
@@ -328,8 +337,10 @@ public class panelTransaksi extends javax.swing.JPanel {
 
         jPanel12.add(jPanel24, java.awt.BorderLayout.PAGE_START);
 
+        jPanel25.setBackground(new java.awt.Color(252, 244, 246));
         jPanel25.setLayout(new java.awt.BorderLayout());
 
+        jPanel26.setBackground(new java.awt.Color(252, 244, 246));
         jPanel26.setPreferredSize(new java.awt.Dimension(576, 35));
         jPanel26.setLayout(new java.awt.GridLayout(1, 3, 15, 0));
 
@@ -348,9 +359,11 @@ public class panelTransaksi extends javax.swing.JPanel {
 
         jPanel25.add(jPanel26, java.awt.BorderLayout.PAGE_START);
 
+        jPanel27.setBackground(new java.awt.Color(252, 244, 246));
         jPanel27.setPreferredSize(new java.awt.Dimension(648, 60));
         jPanel27.setLayout(new java.awt.BorderLayout());
 
+        jPanel28.setBackground(new java.awt.Color(252, 244, 246));
         jPanel28.setPreferredSize(new java.awt.Dimension(60, 19));
         jPanel28.setLayout(new java.awt.GridLayout(1, 0, 15, 0));
 
@@ -371,6 +384,7 @@ public class panelTransaksi extends javax.swing.JPanel {
         jPanel29.setBackground(new java.awt.Color(252, 244, 246));
         jPanel29.setLayout(new java.awt.BorderLayout());
 
+        jPanel30.setBackground(new java.awt.Color(252, 244, 246));
         jPanel30.setPreferredSize(new java.awt.Dimension(625, 35));
         jPanel30.setLayout(new java.awt.GridLayout(1, 3, 15, 0));
 
@@ -448,6 +462,7 @@ public class panelTransaksi extends javax.swing.JPanel {
 
         jPanel13.add(jPanel31, java.awt.BorderLayout.CENTER);
 
+        jPanel33.setBackground(new java.awt.Color(252, 244, 246));
         jPanel33.setPreferredSize(new java.awt.Dimension(860, 10));
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
@@ -517,6 +532,7 @@ public class panelTransaksi extends javax.swing.JPanel {
         jPanel15.setPreferredSize(new java.awt.Dimension(647, 40));
         jPanel15.setLayout(new java.awt.GridLayout(1, 2, 16, 0));
 
+        jPanel17.setBackground(new java.awt.Color(252, 244, 246));
         jPanel17.setLayout(new java.awt.BorderLayout());
 
         jLabel15.setBackground(new java.awt.Color(252, 244, 246));
@@ -527,6 +543,7 @@ public class panelTransaksi extends javax.swing.JPanel {
 
         jPanel15.add(jPanel17);
 
+        jPanel16.setBackground(new java.awt.Color(252, 244, 246));
         jPanel16.setLayout(new java.awt.BorderLayout());
 
         jLabel16.setFont(new java.awt.Font("Poppins", 1, 16)); // NOI18N
@@ -541,11 +558,13 @@ public class panelTransaksi extends javax.swing.JPanel {
         jPanel18.setBackground(new java.awt.Color(255, 255, 255));
         jPanel18.setLayout(new java.awt.GridLayout(1, 2, 16, 0));
 
+        jPanel20.setBackground(new java.awt.Color(255, 255, 255));
         jPanel20.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 16, 16, 16));
         jPanel20.setLayout(new java.awt.BorderLayout());
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
+        jPanel21.setBackground(new java.awt.Color(255, 255, 255));
         jPanel21.setBorder(javax.swing.BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
         jComboBox1.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
@@ -582,11 +601,13 @@ public class panelTransaksi extends javax.swing.JPanel {
 
         jPanel18.add(jPanel20);
 
+        jPanel19.setBackground(new java.awt.Color(255, 255, 255));
         jPanel19.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 16, 16, 16));
         jPanel19.setLayout(new java.awt.BorderLayout());
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
+        jPanel22.setBackground(new java.awt.Color(255, 255, 255));
         jPanel22.setBorder(javax.swing.BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
         jTextField11.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
