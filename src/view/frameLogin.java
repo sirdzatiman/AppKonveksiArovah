@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
+
 import java.awt.*;
 import javax.swing.*;
 import com.formdev.flatlaf.FlatClientProperties;
@@ -15,7 +16,7 @@ import javax.swing.JPanel;
  * @author Sirdzat
  */
 public class frameLogin extends javax.swing.JFrame {
-
+    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameLogin.class.getName());
 
     /**
@@ -23,66 +24,110 @@ public class frameLogin extends javax.swing.JFrame {
      */
     public frameLogin() {
         initComponents();
-        
-    // JTextField username
-    jTextField1.setOpaque(false);
-    jTextField1.setBorder(BorderFactory.createEmptyBorder());
 
-    // JPasswordField password
-    jPasswordField2.setOpaque(false);
-    jPasswordField2.setBorder(BorderFactory.createEmptyBorder());
+        // JTextField username
+        jTextField1.setOpaque(false);
+        jTextField1.setBorder(BorderFactory.createEmptyBorder());
+
+        // JPasswordField password
+        jPasswordField2.setOpaque(false);
+        jPasswordField2.setBorder(BorderFactory.createEmptyBorder());
+
+        // Melengkungkan tombol Masuk
+        btnMasuk.putClientProperty(
+                FlatClientProperties.STYLE, "arc: 20"
+        );
         
-    // Melengkungkan tombol Masuk
-    btnMasuk.putClientProperty(
-        FlatClientProperties.STYLE, "arc: 20"
-    );
+        panelLengkung(panelUtama);
+        panelLengkung(jPanel16);
+        panelLengkung(jPanel9);
+        panelLengkung(jPanel8);
+        panelLengkung(jPanel19);
+        panelLengkung(jPanel18);
+        panelLengkungGaris(panelKanan);
+        // Panel username dan password
+        panelLengkung(panelUsername);
+        panelLengkung(panelPassword);
+    }
     
-    panelLengkung(panelUtama);
-    panelLengkung(panelKanan);
-    panelLengkung(jPanel16);
-    panelLengkung(jPanel9);
-    panelLengkung(jPanel8);
-    panelLengkung(jPanel19);
-    panelLengkung(jPanel18);
-
-    // Panel username dan password
-    panelLengkung(panelUsername);
-    panelLengkung(panelPassword);
-}
-
-   void panelLengkung(JPanel p) {
-    p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
-
-    p.setUI(new javax.swing.plaf.PanelUI() {
-        @Override
-        public void paint(Graphics g, JComponent c) {
-            Graphics2D g2 = (Graphics2D) g.create();
-
-            g2.setRenderingHint(
-                RenderingHints.KEY_ANTIALIASING,
-                RenderingHints.VALUE_ANTIALIAS_ON
-            );
-
-            g2.setColor(c.getBackground());
-            g2.fillRoundRect(0, 0, c.getWidth(), c.getHeight(), 20, 20);
-
-            // Pinggiran abu-abu hanya untuk dua panel
-            if (c == panelUsername || c == panelPassword) {
-                g2.setColor(new Color(190, 190, 190));
-                g2.setStroke(new BasicStroke(1f));
-                g2.drawRoundRect(
-                    0, 0, c.getWidth() - 1, c.getHeight() - 1, 20, 20
+    void panelLengkung(JPanel p) {
+        p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        
+        p.setUI(new javax.swing.plaf.PanelUI() {
+            @Override
+            public void paint(Graphics g, JComponent c) {
+                Graphics2D g2 = (Graphics2D) g.create();
+                
+                g2.setRenderingHint(
+                        RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON
                 );
+                
+                g2.setColor(c.getBackground());
+                g2.fillRoundRect(0, 0, c.getWidth(), c.getHeight(), 20, 20);
+
+                // Pinggiran abu-abu hanya untuk dua panel
+                if (c == panelUsername || c == panelPassword) {
+                    g2.setColor(new Color(190, 190, 190));
+                    g2.setStroke(new BasicStroke(1f));
+                    g2.drawRoundRect(
+                            0, 0, c.getWidth() - 1, c.getHeight() - 1, 20, 20
+                    );
+                }
+                
+                g2.dispose();
+                super.paint(g, c);
             }
+        });
+        
+        p.setOpaque(false);
+        p.repaint();
+    }
 
-            g2.dispose();
-            super.paint(g, c);
-        }
-    });
+    void panelLengkungGaris(JPanel p) {
+        p.setOpaque(false);
+        
+        p.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        
+        p.setUI(new javax.swing.plaf.PanelUI() {
+            @Override
+            public void paint(Graphics g, JComponent c) {
+                Graphics2D g2 = (Graphics2D) g.create();
+                
+                g2.setRenderingHint(
+                        RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON
+                );
+                
+                int arc = 20;
 
-    p.setOpaque(false);
-    p.repaint();
-}
+                // Background panel
+                g2.setColor(c.getBackground());
+                g2.fillRoundRect(
+                        0, 0,
+                        c.getWidth() - 1,
+                        c.getHeight() - 1,
+                        arc, arc
+                );
+
+                // Garis border panel
+                g2.setColor(new Color(210, 185, 195));
+                g2.setStroke(new BasicStroke(1.2f));
+                
+                g2.drawRoundRect(
+                        0, 0,
+                        c.getWidth() - 1,
+                        c.getHeight() - 1,
+                        arc, arc
+                );
+                
+                g2.dispose();
+            }
+        });
+        
+        p.repaint();
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -211,6 +256,7 @@ public class frameLogin extends javax.swing.JFrame {
         Plogo.setLayout(new javax.swing.BoxLayout(Plogo, javax.swing.BoxLayout.Y_AXIS));
 
         jPanel16.setBackground(new java.awt.Color(252, 244, 246));
+        jPanel16.setOpaque(false);
         jPanel16.setLayout(new javax.swing.BoxLayout(jPanel16, javax.swing.BoxLayout.Y_AXIS));
         jPanel16.add(filler2);
 
@@ -236,6 +282,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel18.setBackground(new java.awt.Color(252, 244, 246));
         jPanel18.setMinimumSize(new java.awt.Dimension(595, 65));
+        jPanel18.setOpaque(false);
         jPanel18.setPreferredSize(new java.awt.Dimension(595, 65));
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
@@ -253,6 +300,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel19.setBackground(new java.awt.Color(252, 244, 246));
         jPanel19.setMinimumSize(new java.awt.Dimension(595, 65));
+        jPanel19.setOpaque(false);
         jPanel19.setPreferredSize(new java.awt.Dimension(595, 65));
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -270,6 +318,7 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel20.setBackground(new java.awt.Color(252, 244, 246));
         jPanel20.setMinimumSize(new java.awt.Dimension(66, 592));
+        jPanel20.setOpaque(false);
         jPanel20.setPreferredSize(new java.awt.Dimension(66, 592));
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
@@ -307,17 +356,18 @@ public class frameLogin extends javax.swing.JFrame {
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setMinimumSize(new java.awt.Dimension(463, 108));
+        jPanel7.setOpaque(false);
         jPanel7.setPreferredSize(new java.awt.Dimension(463, 108));
         jPanel7.setLayout(new java.awt.BorderLayout());
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel9.setOpaque(false);
         jPanel9.setPreferredSize(new java.awt.Dimension(463, 81));
         jPanel9.setLayout(new java.awt.BorderLayout());
 
         jLabel3.setFont(new java.awt.Font("Poppins", 1, 30)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Selamat Datang");
-        jLabel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 67, 1, 1));
         jPanel9.add(jLabel3, java.awt.BorderLayout.CENTER);
 
         jPanel7.add(jPanel9, java.awt.BorderLayout.PAGE_START);
@@ -327,9 +377,9 @@ public class frameLogin extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Poppins", 0, 17)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Silahkan masuk untuk melanjutkan");
         jLabel2.setAlignmentY(0.0F);
-        jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 67, 1, 1));
         jPanel10.add(jLabel2, java.awt.BorderLayout.CENTER);
 
         jPanel7.add(jPanel10, java.awt.BorderLayout.CENTER);
@@ -567,7 +617,7 @@ public class frameLogin extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         com.formdev.flatlaf.FlatLightLaf.setup();
-
+        
         java.awt.EventQueue.invokeLater(() -> {
             new frameLogin().setVisible(true);
         });

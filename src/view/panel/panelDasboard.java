@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view.panel;
+import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -22,17 +24,19 @@ public class panelDasboard extends javax.swing.JPanel {
     public panelDasboard() {
         initComponents();
         
-        panelLengkung(jPanel4);
-        panelLengkung(jPanel7);
-        panelLengkung(jPanel8);
-        panelLengkung(jPanel6);
+        panelLengkungGaris(jPanel4);
+        panelLengkungGaris(jPanel7);
+        panelLengkungGaris(jPanel8);
+        panelLengkungGaris(jPanel6);
         
         
     }
     
     
-    void panelLengkung(JPanel p) {
-        p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+    void panelLengkungGaris(JPanel p) {
+        p.setOpaque(false);
+
+        p.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         p.setUI(new javax.swing.plaf.PanelUI() {
             @Override
@@ -40,25 +44,36 @@ public class panelDasboard extends javax.swing.JPanel {
                 Graphics2D g2 = (Graphics2D) g.create();
 
                 g2.setRenderingHint(
-                    RenderingHints.KEY_ANTIALIASING,
-                    RenderingHints.VALUE_ANTIALIAS_ON
+                        RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON
                 );
 
+                int arc = 20;
+
+                // Background panel
                 g2.setColor(c.getBackground());
                 g2.fillRoundRect(
-                    0, 0,
-                    c.getWidth(),
-                    c.getHeight(),
-                    20, 20
+                        0, 0,
+                        c.getWidth() - 1,
+                        c.getHeight() - 1,
+                        arc, arc
+                );
+
+                // Garis border panel
+                g2.setColor(new Color(210, 185, 195));
+                g2.setStroke(new BasicStroke(1.2f));
+
+                g2.drawRoundRect(
+                        0, 0,
+                        c.getWidth() - 1,
+                        c.getHeight() - 1,
+                        arc, arc
                 );
 
                 g2.dispose();
-
-                super.paint(g, c);
             }
         });
 
-        p.setOpaque(false);
         p.repaint();
     }
 
@@ -268,6 +283,7 @@ public class panelDasboard extends javax.swing.JPanel {
         jPanel6.setLayout(new java.awt.BorderLayout());
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel9.setOpaque(false);
         jPanel9.setPreferredSize(new java.awt.Dimension(926, 80));
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

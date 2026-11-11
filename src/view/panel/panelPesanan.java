@@ -3,13 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view.panel;
+
 import com.formdev.flatlaf.FlatClientProperties;
+import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
+
 /**
  *
  * @author Sirdzat
@@ -22,63 +26,108 @@ public class panelPesanan extends javax.swing.JPanel {
     public panelPesanan() {
         initComponents();
         
-    jTextField5.setOpaque(false);
-    jTextField5.setBorder(BorderFactory.createEmptyBorder());
+        jTextField5.setOpaque(false);
+        jTextField5.setBorder(BorderFactory.createEmptyBorder());
+
+        // Melengkungkan JPanel
+        panelLengkung(jPanel14);
+
+        // Melengkungkan JButton
+        jToggleButton10.putClientProperty(
+                FlatClientProperties.STYLE, "arc: 20"
+        );
         
-    // Melengkungkan JPanel
-    panelLengkung(jPanel14);
-
-    // Melengkungkan JButton
-    jToggleButton10.putClientProperty(
-        FlatClientProperties.STYLE, "arc: 20"
-    );
-
-    jToggleButton11.putClientProperty(
-        FlatClientProperties.STYLE, "arc: 20"
-    );
-
-    jToggleButton12.putClientProperty(
-        FlatClientProperties.STYLE, "arc: 20"
-    );
-
-    jButton1.putClientProperty(
-        FlatClientProperties.STYLE, "arc: 20"
-    );
-
-    jButton2.putClientProperty(
-        FlatClientProperties.STYLE, "arc: 20"
-    );
-    
-    jPanel14.setOpaque(false);
-    jPanel14.repaint();
-  
+        jToggleButton11.putClientProperty(
+                FlatClientProperties.STYLE, "arc: 20"
+        );
+        
+        jToggleButton12.putClientProperty(
+                FlatClientProperties.STYLE, "arc: 20"
+        );
+        
+        jButton1.putClientProperty(
+                FlatClientProperties.STYLE, "arc: 20"
+        );
+        
+        jButton2.putClientProperty(
+                FlatClientProperties.STYLE, "arc: 20"
+        );
+        
+        jPanel14.setOpaque(false);
+        jPanel14.repaint();
+        panelLengkungGaris(jPanel7);
     }
+
     void panelLengkung(JPanel p) {
-    p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        
+        p.setUI(new javax.swing.plaf.PanelUI() {
+            @Override
+            public void paint(Graphics g, JComponent c) {
+                Graphics2D g2 = (Graphics2D) g.create();
+                
+                g2.setRenderingHint(
+                        RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON
+                );
+                
+                g2.setColor(c.getBackground());
+                g2.fillRoundRect(
+                        0, 0, c.getWidth(), c.getHeight(), 20, 20
+                );
+                
+                g2.dispose();
+                super.paint(g, c);
+            }
+        });
+        
+        p.setOpaque(false);
+        p.repaint();
+    }
 
-    p.setUI(new javax.swing.plaf.PanelUI() {
-        @Override
-        public void paint(Graphics g, JComponent c) {
-            Graphics2D g2 = (Graphics2D) g.create();
+    void panelLengkungGaris(JPanel p) {
+        p.setOpaque(false);
+        
+        p.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        
+        p.setUI(new javax.swing.plaf.PanelUI() {
+            @Override
+            public void paint(Graphics g, JComponent c) {
+                Graphics2D g2 = (Graphics2D) g.create();
+                
+                g2.setRenderingHint(
+                        RenderingHints.KEY_ANTIALIASING,
+                        RenderingHints.VALUE_ANTIALIAS_ON
+                );
+                
+                int arc = 20;
 
-            g2.setRenderingHint(
-                RenderingHints.KEY_ANTIALIASING,
-                RenderingHints.VALUE_ANTIALIAS_ON
-            );
+                // Background panel
+                g2.setColor(c.getBackground());
+                g2.fillRoundRect(
+                        0, 0,
+                        c.getWidth() - 1,
+                        c.getHeight() - 1,
+                        arc, arc
+                );
 
-            g2.setColor(c.getBackground());
-            g2.fillRoundRect(
-                0, 0, c.getWidth(), c.getHeight(), 20, 20
-            );
-
-            g2.dispose();
-            super.paint(g, c);
-        }
-    });
-
-    p.setOpaque(false);
-    p.repaint();
-}
+                // Garis border panel
+                g2.setColor(new Color(210, 185, 195));
+                g2.setStroke(new BasicStroke(1.2f));
+                
+                g2.drawRoundRect(
+                        0, 0,
+                        c.getWidth() - 1,
+                        c.getHeight() - 1,
+                        arc, arc
+                );
+                
+                g2.dispose();
+            }
+        });
+        
+        p.repaint();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
